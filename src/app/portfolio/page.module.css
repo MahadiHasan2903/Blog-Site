@@ -1,0 +1,94 @@
+.mainTitle {
+  font-size: 80px;
+}
+
+.container {
+}
+
+.selectTitle {
+  margin: 20px 0px;
+}
+
+.items {
+  display: flex;
+  gap: 50px;
+}
+
+.item {
+  border: 5px solid #bbb;
+  border-radius: 5px;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  background-size: cover !important;
+  color: #fff;
+}
+
+.item:nth-child(1) {
+  background: url("/illustration.png");
+}
+.item:nth-child(2) {
+  background: url("/websites.jpg");
+}
+.item:nth-child(3) {
+  background: url("/apps.jpg");
+}
+
+.title {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.item:hover {
+  border: 5px solid #53c28b;
+  transition: 0.3s;
+}
+
+.item:hover .title {
+  color: #53c28b;
+  transition: 0.3s;
+}
+
+@media (max-width: 767px) {
+  .mainTitle {
+    font-size: 55px;
+  }
+
+  .items {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 991px) {
+  .items {
+    gap: 20px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .item {
+    margin: 25px 0px;
+  }
+  .mainTitle {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 575px) {
+  .items {
+    margin-right: 20px;
+  }
+  .mainTitle {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  .selectTitle {
+    font-size: 20px;
+  }
+}

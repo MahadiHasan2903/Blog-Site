@@ -1,0 +1,40 @@
+.container {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.content {
+}
+
+.mainContainer {
+  margin-top: 50px;
+}
+
+/* .imageContainer {
+  width: 500px;
+  overflow-x: hidden;
+} */
+
+.title {
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 18px;
+  color: #999;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 991px) {
+  .container {
+    display: block;
+    margin-bottom: 80px;
+  }
+}

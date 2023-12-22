@@ -1,0 +1,122 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
+.linkContainer {
+  display: block;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.link:hover {
+  color: #53c28b;
+}
+.logout {
+  padding: 8px;
+  border: none;
+  background-color: #53c28b;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.togglebar {
+  display: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.togglebar:hover {
+  color: #53c28b;
+}
+.toggleIcon {
+  display: none;
+}
+.menbar {
+  display: none;
+}
+.mode {
+  margin-left: 400px;
+}
+
+.toggleLinks {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .menbar {
+    display: block;
+    cursor: pointer;
+    color: #929292;
+  }
+  .links {
+    display: none;
+  }
+  .togglebar {
+    display: block;
+  }
+
+  .toggleNavbar {
+    display: block;
+    background: rgba(255, 255, 255, 0.11);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    top: 0;
+    position: absolute;
+    width: 80%;
+    height: 100vh;
+    right: -100%;
+    z-index: 999;
+    transition: right 400ms ease-in-out;
+  }
+  .toggleNavbar.toggleNavbarActive {
+    right: -20px;
+  }
+
+  /* .toggleNavbar.toggleNavbarInActive {
+    right: -2000px;
+  } */
+  .toggleIcon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .mode {
+    margin-left: 0px;
+  }
+
+  .toggleLinks {
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .toggleLink {
+    color: #929292;
+    font-size: 18px;
+  }
+
+  .toggleLink:hover {
+    color: #53c28b;
+  }
+}
