@@ -2,11 +2,10 @@ import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { apiEndpoint } from "@/app/server";
 
 async function getData(id) {
-  const apiEndpoint = process.env.NEXT_AUTH_URL;
-
-  const res = await fetch(`/api/posts/${id}`, {
+  const res = await fetch(`${apiEndpoint}api/posts/${id}`, {
     cache: "no-store",
   });
 
